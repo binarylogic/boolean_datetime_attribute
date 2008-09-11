@@ -1,0 +1,14 @@
+# Boolean datetime attribute
+
+## What is boolean attribute?
+
+This plugin allows you to replace boolean columns with datetime columns. For example, you have a User model with the "inactive" boolean column. Why not make it more informative and change that column to "inactive_at"? Now you know when the user was marked inactive. This plugin allows you to do that and still get all of the methods that you would have for a boolean column. It's transparent, you can treat it as a boolean, but it will store it as a date.
+
+## How it works
+
+    class User < ActiveRecord::Base
+        boolean_datetime_attribute :inactive_at
+    end
+
+
+Copyright (c) 2007 Ben Johnson of [Binary Logic](http://www.binarylogic.com), released under the MIT license

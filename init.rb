@@ -1,0 +1,1 @@
+require "boolean_datetime_attribute"
